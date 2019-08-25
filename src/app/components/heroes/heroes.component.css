@@ -1,0 +1,8 @@
+nz-descriptions{
+  background-color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.selected-item {
+  background-color: cyan;
+}

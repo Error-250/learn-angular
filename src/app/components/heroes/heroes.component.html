@@ -1,0 +1,8 @@
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<nz-list nzBordered nzSize="small">
+  <!-- class.(在css文件里写的class) 按照条件控制class加在某个标签上 -->
+  <nz-list-item *ngFor="let hero of heroes" [class.selected-item]="hero === selectedHero">
+    <nz-list-item-meta [ngStyle]="{'cursor': 'pointer'}" nzDescription="{{hero.name}}"
+                       (click)="selectHero(hero)"></nz-list-item-meta>
+  </nz-list-item>
+</nz-list>

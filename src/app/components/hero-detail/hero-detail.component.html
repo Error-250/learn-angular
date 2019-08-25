@@ -1,0 +1,9 @@
+<nz-descriptions *ngIf="hero" nzTitle="{{hero.name | uppercase}} Details">
+  <nz-descriptions-item nzTitle="id">{{hero.id}}</nz-descriptions-item>
+  <nz-descriptions-item nzTitle="name">
+    <label>
+      <!-- 双向绑定 -->
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </nz-descriptions-item>
+</nz-descriptions>
